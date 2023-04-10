@@ -42,7 +42,7 @@ monsterAttackHpStatus.innerHTML = initialState.monsterHp;
 
 // Listener for Round button:
 // incrementing score
-// make Rules btn disabled till round end
+// make Round btn disabled till round end
 // show the opportunity for player attack
 // write score data in header
 roundButton.addEventListener("click", e => {
