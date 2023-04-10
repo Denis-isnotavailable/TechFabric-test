@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game page</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/gamepage.css" />
+</head>
+
+<body>    
+    <header class="header">
+        <ul class="list header__data-list">
+            <li class="header__data-item">User name</li>
+            <li class="header__data-item">Level: 1</li>
+            <li class="header__data-item">Score: 0</li>
+            <!-- <li>HP: <span>7</span></li> -->
+        </ul>
+    </header>
+    
+    <main>
+        <div class="container">
+            <ul class="list monsters-list">
+                <li class="monsters-list__item monster-defence-item">
+                    <div class="img-thumb">
+                        <img class="monster-defence-img" src="./images/monster-defence.png" alt="monster-defence" width="400px" height="500px" />
+                    </div>
+                    <ul class="list kicks-list-defence">
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                        <li class="kicks-list-item"><button class="kicks-button defence-monster-button"></button></li>
+                    </ul>
+                    <div class="hp-thumb">Player HP: <span class="monster-defence-hp">3</span></div>                    
+                </li>
+
+                <li class="monsters-list__item">
+                    <button class="round-button">Click to Start Round</button>
+                    <img src="./images/swords.png" alt="swords" width="200px" height="200px" />
+                    <button class="rules-button">Rules</button>
+                </li>
+
+                <li class="monsters-list__item monster-attack-item">
+                    <div class="img-thumb">
+                        <img class="monster-attack-img" src="./images/monster-one.png" alt="monster-attack" width="400px" height="500px" />
+                    </div>
+                    <ul class="list kicks-list-attack">
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                        <li class="kicks-list-item"><button disabled class="kicks-button attack-monster-button"></button></li>
+                    </ul>   
+                    <div class="hp-thumb">Monster HP: <span class="monster-attack-hp">2</span></div>
+                </li>                    
+            </ul>
+            
+        </div>
+    </main>  
+    
+    <div class="drop-bg drop-bg--is-hidden" data-modal>
+        <div class="modal"> 
+            <div class="modal-message">Message</div>
+    
+            <button class="modal-button" type="button">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="./js/game.js"></script>
+</body>
+
+</html>

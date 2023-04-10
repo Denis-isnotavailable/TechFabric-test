@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/mainpage.css" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form class="form" name="modal">
+            
+                <h1 class="title">Create new account</h1>
+                
+                    <label class="form__label">
+                        <p class="form__label-name">NickName 
+                            <!-- <span class="error nickname-error"></span> -->
+                        </p>                        
+                        <span class="form__input-window">
+                            <input class="form__input" type="text" name="nickname" autocomplete="off" required >
+                        </span>
+                    </label>
+                
+                    <label class="form__label">
+                        <p class="form__label-name">Name 
+                            <!-- <span class="error name-error"></span> -->
+                        </p>
+                        <span class="form__input-window">
+                            <input class="form__input" type="text" name="name" autocomplete="off" required >
+                        </span>
+                    </label>
+                
+                    <label class="form__label last-item">
+                        <p class="form__label-name">Email 
+                            <!-- <span class="error email-error"></span> -->
+                        </p>
+                        <span class="form__input-window">
+                            <input class="form__input" type="email" name="email" autocomplete="off" required >
+                        </span>
+                    </label>     
+                    
+                    <input class="form__button" type="submit" value="Start the Game">
+            
+                <!-- <button class="form__button" type="submit">                    
+                    <a href="game.html" class="start-link">Start the Game</a>
+                </button> -->
+            </form>
+        </div>        
+    </main>    
+
+    <script type="module" src="./js/formdata.js"></script>
+</body>
+
+</html>
