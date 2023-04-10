@@ -49,11 +49,11 @@
     font-weight: 700;
 }
 
-/* .error {
+.error {
     font-size: 20px;
     font-weight: 500;
     color: #ff0000;
-} */
+}
 
 .form__input {
     width: 540px;

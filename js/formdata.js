@@ -7,6 +7,7 @@ const user = {
 }
 
 const registerForm = document.querySelector(".form");
+const emailError = document.querySelector(".email-error");
 
 registerForm.addEventListener("submit", e => {
     e.preventDefault();
@@ -19,10 +20,11 @@ registerForm.addEventListener("submit", e => {
     user.name = name.value;
     user.email = email.value;
 
-    const isEmptyFields = !isValidEmail(email.value) && nickname.value === "" && name.value === "";
-
-    if (!isEmptyFields) {
+    if (!isValidEmail(email.value)) {
+        emailError.innerHTML = "use correct email"
+    } else {
+        emailError.innerHTML = "";
         localStorage.setItem("user", JSON.stringify(user));
-        document.location.href = "./game.html";
+        document.location.href = "game.html";
     }
 });
