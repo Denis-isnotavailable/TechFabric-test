@@ -23,6 +23,6 @@ registerForm.addEventListener("submit", e => {
 
     if (!isEmptyFields) {
         localStorage.setItem("user", JSON.stringify(user));
-        document.location.href = "../game.html";
+        document.location.href = "./game.html";
     }
 });
